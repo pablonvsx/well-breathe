@@ -9,6 +9,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 export default function Report() {
   const { cityName } = useLocalSearchParams();
+  const router = useRouter();
   const city = weatherData.find(c => c.location_name === cityName);
 
   // --- ESTADOS PARA O SIMULADOR (POP-UP) ---
@@ -139,10 +140,13 @@ export default function Report() {
           <Text style={styles.meanValue}>{city.mean_pm25_2025} µg/m³</Text>
         </View>
 
-        <View style={styles.clusterBadge}>
+        <TouchableOpacity 
+          style={styles.clusterBadge}
+          onPress={() => router.push({ pathname: '/cluster-info', params: { clusterName: city.cluster_name } })}
+        >
           <Ionicons name="git-network-outline" size={16} color="#8E44AD" />
           <Text style={styles.clusterText}>{city.cluster_name}</Text>
-        </View>
+        </TouchableOpacity>
 
         <TouchableOpacity 
           style={styles.simulatorBtn} 
