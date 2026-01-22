@@ -6,6 +6,10 @@ Sistema de monitoramento global de qualidade do ar com análise preditiva basead
 
 Well-Breathe é uma aplicação mobile fullstack que combina React Native com Python para análise de dados ambientais de 209 cidades ao redor do mundo. O projeto utiliza técnicas de ciência de dados para classificar perfis climáticos e prever riscos de poluição atmosférica.
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/258bab0c-f619-4f5a-b997-87ea5e367069" width="300">
+</div>
+
 * Nota: Este projeto possui caráter estritamente exploratório e acadêmico. Seu objetivo central é o aprendizado de técnicas de Data Science e a viabilização técnica da integração entre modelos de Machine Learning e o desenvolvimento de sistemas. Portanto, os dados utilizados e os resultados apresentados não têm a pretensão de explicar a complexidade dos fenômenos atmosféricos reais, tampouco devem ser utilizados como base para decisões de saúde ou segurança, uma vez que se trata de uma simulação didática baseada em um recorte limitado de variáveis meteorológicas.
 
 ## Funcionalidades
