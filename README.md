@@ -6,10 +6,6 @@ Sistema de monitoramento global de qualidade do ar com análise preditiva basead
 
 Well-Breathe é uma aplicação mobile fullstack que combina React Native com Python para análise de dados ambientais de 209 cidades ao redor do mundo. O projeto utiliza técnicas de ciência de dados para classificar perfis climáticos e prever riscos de poluição atmosférica.
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/258bab0c-f619-4f5a-b997-87ea5e367069" width="300">
-</div>
-
 * Nota: Este projeto possui caráter estritamente exploratório e acadêmico. Seu objetivo central é o aprendizado de técnicas de Data Science e a viabilização técnica da integração entre modelos de Machine Learning e o desenvolvimento de sistemas. Portanto, os dados utilizados e os resultados apresentados não têm a pretensão de explicar a complexidade dos fenômenos atmosféricos reais, tampouco devem ser utilizados como base para decisões de saúde ou segurança, uma vez que se trata de uma simulação didática baseada em um recorte limitado de variáveis meteorológicas.
 
 ## Funcionalidades
@@ -51,8 +47,6 @@ Well-Breathe é uma aplicação mobile fullstack que combina React Native com Py
 - **Expo**: Plataforma para build e deploy simplificado
 - **Expo Router**: Sistema de navegação baseado em arquivos
 - **TypeScript**: Tipagem estática para maior segurança no código
-- **AsyncStorage**: Persistência local de dados
-- **Ionicons**: Biblioteca de ícones vetoriais
 
 ### Data Science e Machine Learning
 - **Python 3.13**: Linguagem base para processamento de dados
@@ -126,36 +120,6 @@ Well-Breathe é uma aplicação mobile fullstack que combina React Native com Py
    - Geração de well_breathe_2025_ml.csv (dados para ML)
    - Geração de well_breathe_cities.json (otimizado para mobile)
 
-## Estrutura de Arquivos
-
-```
-well-breathe/
-├── mobile-app/
-│   ├── app/
-│   │   ├── index.tsx              # Tela inicial
-│   │   ├── list.tsx               # Lista de cidades
-│   │   ├── favorites.tsx          # Favoritos
-│   │   ├── report.tsx             # Relatório detalhado
-│   │   ├── cluster-info.tsx       # Info do cluster
-│   │   ├── about.tsx              # Sobre o projeto
-│   │   └── _layout.tsx            # Layout principal
-│   ├── assets/
-│   │   └── data/
-│   │       └── well_breathe_cities.json  # Dados processados
-│   └── package.json
-├── data-science/
-│   ├── notebooks/
-│   │   ├── 01_data_cleaning_mobile_app.ipynb
-│   │   └── 02_cluster_ia.ipynb
-│   ├── dataset/
-│   │   ├── GlobalWeatherRepository.csv
-│   │   ├── well_breathe_2025_full.csv
-│   │   └── well_breathe_2025_ml.csv
-│   └── venv/
-├── .gitignore
-└── README.md
-```
-
 ## Variáveis Analisadas
 
 | Variável | Unidade | Descrição |
@@ -184,37 +148,6 @@ well-breathe/
 - Python 3.13+
 - Expo CLI
 - Git
-
-### Instalação e Execução
-
-#### 1. Clone o repositório
-```bash
-git clone https://github.com/pablonvsx/well-breathe.git
-cd well-breathe
-```
-
-#### 2. Configurar Mobile App
-```bash
-cd mobile-app
-npm install
-npx expo start
-```
-
-Use o aplicativo Expo Go no seu smartphone ou um emulador para visualizar.
-
-#### 3. Configurar Data Science (Opcional)
-```bash
-cd data-science
-python -m venv venv
-venv\Scripts\activate  # Windows
-source venv/bin/activate  # Linux/Mac
-pip install pandas scikit-learn jupyter numpy
-jupyter lab
-```
-
-Execute os notebooks na ordem:
-- `01_data_cleaning_mobile_app.ipynb`: Limpeza e preparação dos dados
-- `02_cluster_ia.ipynb`: Clusterização e classificação
 
 ## Métricas do Projeto
 
